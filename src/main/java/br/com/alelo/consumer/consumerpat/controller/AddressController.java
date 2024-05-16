@@ -33,14 +33,12 @@ public class AddressController {
         return new ResponseEntity<>(address, HttpStatus.OK);
     }
 
-    // Endpoint para buscar endereços por rua
     @GetMapping("/byStreet")
     public ResponseEntity<List<Address>> getAddressesByStreet(@RequestParam String street) {
         List<Address> addresses = addressService.getAddressesByStreet(street);
         return new ResponseEntity<>(addresses, HttpStatus.OK);
     }
 
-    // Endpoint para buscar endereços por cidade
     @GetMapping("/byCity")
     public ResponseEntity<List<Address>> getAddressesByCity(@RequestParam String city) {
         List<Address> addresses = addressService.getAddressesByCity(city);

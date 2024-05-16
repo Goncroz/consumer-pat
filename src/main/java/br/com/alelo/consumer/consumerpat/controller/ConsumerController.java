@@ -1,21 +1,13 @@
 package br.com.alelo.consumer.consumerpat.controller;
 
 import br.com.alelo.consumer.consumerpat.service.ConsumerService;
-
-import br.com.alelo.consumer.consumerpat.entity.Consumer;
-import br.com.alelo.consumer.consumerpat.entity.Extract;
-import br.com.alelo.consumer.consumerpat.respository.ConsumerRepository;
-import br.com.alelo.consumer.consumerpat.respository.ExtractRepository;
-
 import br.com.alelo.consumer.consumerpat.service.ExtractService;
-import lombok.extern.log4j.Log4j2;
-import org.springframework.beans.factory.annotation.Autowired;
+import br.com.alelo.consumer.consumerpat.entity.Consumer;
+
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.Date;
 import java.util.List;
 
 

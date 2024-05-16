@@ -8,8 +8,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.Date;
-
 @RestController
 @RequestMapping("/extracts")
 public class ExtractController {
@@ -23,7 +21,7 @@ public class ExtractController {
     @PostMapping("/create")
     public ResponseEntity<Void> createExtract(@RequestParam String establishmentName,
                                               @RequestParam String productDescription,
-                                              @RequestParam Date date,
+                                              @RequestParam String date,
                                               @RequestParam int cardNumber,
                                               @RequestParam double value) {
         extractService.createExtract(establishmentName, productDescription, date, cardNumber, value);

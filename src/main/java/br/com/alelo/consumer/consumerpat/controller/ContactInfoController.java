@@ -1,11 +1,11 @@
-package br.com.alelo.consumer.consumerpat.controller;// ContactInfoController.java
+package br.com.alelo.consumer.consumerpat.controller;
 import br.com.alelo.consumer.consumerpat.entity.ContactInfo;
 import br.com.alelo.consumer.consumerpat.service.ContactInfoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import java.util.List;
+
 
 @RestController
 @RequestMapping("/contact-info")
